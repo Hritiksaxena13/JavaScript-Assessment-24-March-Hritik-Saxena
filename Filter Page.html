@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter</title>
+    <link rel="stylesheet" href="filter.css">
+    <script src="filter.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Product Under Sales</h2>
+
+        <div class="filters">
+            <select id="category" onchange="filter()">
+                <option value="all">All Categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="kitchen">Kitchen Appliances</option>
+            </select>
+            <input type="text" id="search" placeholder="Search Product..." oninput="filter()" />
+            <input type="range" id="price" min="0" max="1000" step="20" value="1000" oninput="updatePrice()"
+                onchange="filter()" />
+            <span id="price">₹1000</span>
+
+            
+        </div>
+
+        <div id="productList">
+            <div class="product" data-category="electronics" data-price="500">
+                <h3>Apple Iphone 16 Pro</h3>
+                <p>Price: 90000</p>
+            </div>
+            <div class="product" data-category="electronics" data-price="800">
+                <h3>Mac Book Pro 2</h3>
+                <p>Price: 280000</p>
+            </div>
+            <div class="product" data-category="electronics" data-price="200">
+                <h3>Boat Earbuds</h3>
+                <p>Price: 2000</p>
+            </div>
+            <div class="product" data-category="electronics" data-price="200">
+                <h3>Airdrops</h3>
+                <p>Price: 30000</p>
+            </div>
+            <div class="product" data-category="electronics" data-price="200">
+                <h3>PS 5</h3>
+                <p>Price: 122000</p>
+            </div>
+            <div class="product" data-category="electronics" data-price="200">
+                <h3>JBL Speakers</h3>
+                <p>Price: 45000</p>
+            </div>
+
+            <div class="product" data-category="clothing" data-price="100">
+                <h3>US Polo T-Shirt</h3>
+                <p>Price: 1000</p>
+            </div>
+            <div class="product" data-category="clothing" data-price="250">
+                <h3>H&M Jacket</h3>
+                <p>Price: 25000</p>
+            </div>
+            <div class="product" data-category="clothing" data-price="200">
+                <h3>Zara Pants</h3>
+                <p>Price: 22000</p>
+            </div>
+            <div class="product" data-category="clothing" data-price="200">
+                <h3>Zara Pants</h3>
+                <p>Price: 22000</p>
+            </div>
+            <div class="product" data-category="clothing" data-price="200">
+                <h3>Zara Pants</h3>
+                <p>Price: 22000</p>
+            </div>
+            <div class="product" data-category="clothing" data-price="200">
+                <h3>Zara Pants</h3>
+                <p>Price: 22000</p>
+            </div>
+
+            <div class="product" data-category="kitchen" data-price="300">
+                <h3>Philips Air Fryer</h3>
+                <p>Price: 3500</p>
+            </div>
+            <div class="product" data-category="kitchen" data-price="150">
+                <h3>Prestige Pressure Cooker</h3>
+                <p>Price: 1800</p>
+            </div>
+            <div class="product" data-category="kitchen" data-price="250">
+                <h3>Bajaj Mixer Grinder</h3>
+                <p>Price: 3200</p>
+            </div>
+            <div class="product" data-category="kitchen" data-price="100">
+                <h3>Milton Electric Kettle</h3>
+                <p>Price: 1200</p>
+            </div>
+            <div class="product" data-category="kitchen" data-price="180">
+                <h3>Butterfly Gas Stove</h3>
+                <p>Price: 2900</p>
+            </div>
+            <div class="product" data-category="kitchen" data-price="90">
+                <h3>Usha Wall Fan</h3>
+                <p>Price: 1400</p>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>
